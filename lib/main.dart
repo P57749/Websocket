@@ -26,7 +26,7 @@ class WebSocketApp extends StatefulWidget {
 }
 
 class _WebSocketAppState extends State<WebSocketApp> {
-  //aqi va la direccion del servidor usé xampp
+  //aqi va la direccion del servidor
   final channel = IOWebSocketChannel.connect('https://local.noseque:');
 
   @override
@@ -39,7 +39,7 @@ class _WebSocketAppState extends State<WebSocketApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('WebSocket App'),
+        title: Text('App'),
       ),
       body: Center(
         child: StreamBuilder(
